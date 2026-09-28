@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nour elhouda Najjar — Ingénieure Data & IA</title>
-  <meta name="description" content="Ingénieure Data & IA : je transforme des documents et des données brutes en systèmes IA fiables — RAG, LLMs, pipelines de données et simulation.">
-  <meta property="og:title" content="Nour elhouda Najjar — Ingénieure Data & IA">
-  <meta property="og:description" content="RAG, LLMs, pipelines de données et simulation, avec des résultats mesurés.">
+  <meta name="description" content="Ingénieure Data & IA : RAG, LLMs, pipelines de données et simulation, avec des résultats mesurés.">
+  <meta property="og:title" content="Nour elhouda Najjar — Data & AI Engineer">
+  <meta property="og:description" content="RAG, LLMs, data pipelines and simulation — with measured results.">
   <meta property="og:image" content="https://nournajjjar.github.io/assets/img/bfi-poster.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%236d5dfc'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>NN</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,56 +21,120 @@
     <div class="container nav-inner">
       <a href="#top" class="logo"><span>NN</span></a>
       <nav>
-        <a href="#projets">Projets</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#competences">Compétences</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#apropos" data-en="About">À propos</a>
+        <a href="#projets" data-en="Projects">Projets</a>
+        <a href="#parcours" class="hide-sm" data-en="Journey">Parcours</a>
+        <a href="#contact" class="hide-sm" data-en="Contact">Contact</a>
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch to English">
+          <span class="lang-opt" data-lang="fr">FR</span><span class="lang-opt" data-lang="en">EN</span>
+        </button>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- ============ HERO / INTRO ============ -->
     <section class="hero container">
-      <p class="status"><span class="dot"></span>Ouverte aux opportunités · Data &amp; IA</p>
-      <h1>Je construis des systèmes d'IA<br><span class="grad">sur lesquels on peut compter.</span></h1>
-      <p class="lead">
-        Je suis <strong>Nour elhouda Najjar</strong>, ingénieure en informatique (ESPRIT, Data Science).
-        Je transforme des documents financiers et des données brutes en outils IA utilisables en production :
-        RAG, LLMs, pipelines de données et simulation, avec des résultats <em>mesurés</em>, pas estimés.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#projets">Voir les démos</a>
-        <a class="btn" href="mailto:nourelhouda.najjar@esprit.tn">Me contacter</a>
-        <a class="icon-btn" href="https://github.com/nournajjjar" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
-        </a>
-        <a class="icon-btn" href="https://www.linkedin.com/in/nour-el-houda-najjar" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg>
-        </a>
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span><span data-en="Open to opportunities · Data &amp; AI">Ouverte aux opportunités · Data &amp; IA</span></p>
+        <p class="hello" data-en="Hi, I'm">Bonjour, je suis</p>
+        <h1>Nour elhouda Najjar</h1>
+        <p class="role"><span class="grad" data-en="Data &amp; AI Engineer">Ingénieure Data &amp; IA</span></p>
+        <p class="lead" data-en="I build AI systems you can trust: I turn raw documents and data into tools people actually use — RAG, LLMs, data pipelines and simulation, with results that are <em>measured</em>, not guessed.">
+          Je construis des systèmes d'IA sur lesquels on peut compter : je transforme des documents et des données brutes
+          en outils réellement utilisés — RAG, LLMs, pipelines de données et simulation, avec des résultats <em>mesurés</em>, pas estimés.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projets" data-en="See the demos">Voir les démos</a>
+          <a class="btn" href="mailto:nourelhouda.najjar@esprit.tn" data-en="Contact me">Me contacter</a>
+          <a class="icon-btn" href="https://github.com/nournajjjar" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/nour-el-houda-najjar" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg>
+          </a>
+        </div>
       </div>
 
-      <dl class="stats">
-        <div><dt>~15 min</dt><dd>pour un rapport de crédit complet de 16 sections, au lieu de plusieurs jours</dd></div>
-        <div><dt>0</dt><dd>hallucination détectée sur le chatbot bancaire (faithfulness 1.0)</dd></div>
-        <div><dt>92 %</dt><dd>de précision sur la prédiction du churn client</dd></div>
-        <div><dt>20</dt><dd>banques tunisiennes couvertes par le pipeline de scraping</dd></div>
-      </dl>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="assets/img/photo.jpg" alt="Photo de Nour elhouda Najjar" data-en-alt="Photo of Nour elhouda Najjar"
+               onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+          <span class="photo-fallback" aria-hidden="true">NN</span>
+        </div>
+        <div class="float-chip chip-1">🤖 RAG · LLMs</div>
+        <div class="float-chip chip-2">📊 Data Engineering</div>
+      </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ============ ABOUT ============ -->
+    <section id="apropos" class="container">
+      <div class="about">
+        <div class="about-text reveal">
+          <p class="kicker" data-en="About me">À propos</p>
+          <h2 data-en="Engineer by training, problem-solver by nature">Ingénieure de formation, résolveuse de problèmes par nature</h2>
+          <p data-en="I'm a computer engineer from <strong>ESPRIT</strong> (Tunis), specialised in <strong>Data Science</strong>. After two years of preparatory classes in maths and physics, I fell for a simple idea: data only has value once it helps someone make a better decision.">
+            Je suis ingénieure en informatique diplômée d'<strong>ESPRIT</strong> (Tunis), spécialisée en <strong>Data Science</strong>.
+            Après deux ans de classes préparatoires en maths-physique, j'ai été conquise par une idée simple :
+            une donnée n'a de valeur que lorsqu'elle aide quelqu'un à prendre une meilleure décision.
+          </p>
+          <p data-en="That's what I've built across my internships at <strong>VALUE Digital Services</strong>, mostly for the banking and finance sector: a credit-analysis platform that writes a full report in about 15 minutes instead of days, a simulator that predicts how bank customers react to a campaign, and a due-diligence assistant that reads crypto whitepapers for investors.">
+            C'est ce que j'ai construit pendant mes stages chez <strong>VALUE Digital Services</strong>, surtout pour la banque et la finance :
+            une plateforme d'analyse de crédit qui rédige un rapport complet en ~15 minutes au lieu de plusieurs jours,
+            un simulateur qui prédit la réaction des clients d'une banque à une campagne, et un assistant de due diligence
+            qui lit les whitepapers crypto à la place des investisseurs.
+          </p>
+          <p data-en="What drives me: shipping complete products (API, interface, database, deployment), and being honest about the numbers. In finance, an AI that invents things is worse than no AI at all.">
+            Ce qui me motive : livrer des produits complets (API, interface, base de données, déploiement) et rester honnête
+            sur les chiffres. En finance, une IA qui invente est pire que pas d'IA du tout.
+          </p>
+        </div>
+
+        <aside class="facts reveal">
+          <div><span data-en="Based in">Basée à</span><b data-en="Tunis, Tunisia">Tunis, Tunisie</b></div>
+          <div><span data-en="Degree">Diplôme</span><b data-en="Computer Engineering · ESPRIT 2026">Ingénieure informatique · ESPRIT 2026</b></div>
+          <div><span data-en="Focus">Domaines</span><b>GenAI · RAG · Data Engineering · ML</b></div>
+          <div><span data-en="Languages">Langues</span><b data-en="Arabic · French · English">Arabe · Français · Anglais</b></div>
+          <div><span data-en="Certified">Certifiée</span><b>NVIDIA (×2) · Hedera</b></div>
+        </aside>
+      </div>
+
+      <dl class="stats reveal">
+        <div><dt>~15 min</dt><dd data-en="for a full 16-section credit report, instead of several days">pour un rapport de crédit complet de 16 sections, au lieu de plusieurs jours</dd></div>
+        <div><dt>0</dt><dd data-en="hallucinations detected on the banking chatbot (faithfulness 1.0)">hallucination détectée sur le chatbot bancaire (faithfulness 1.0)</dd></div>
+        <div><dt>92 %</dt><dd data-en="accuracy on customer churn prediction">de précision sur la prédiction du churn client</dd></div>
+        <div><dt>200</dt><dd data-en="due-diligence questions generated and answered per document">questions de due diligence générées et répondues par document</dd></div>
+      </dl>
+
+      <div class="values">
+        <div class="value reveal">
+          <h3 data-en="From prototype to production">Du prototype à la production</h3>
+          <p data-en="I deliver complete applications: secured FastAPI backend (JWT), React frontend, vector database, and one-command Docker Compose deployment.">Je livre des applications complètes : API FastAPI sécurisée (JWT), frontend React, base vectorielle et déploiement Docker Compose en une commande.</p>
+        </div>
+        <div class="value reveal">
+          <h3 data-en="Reliable, measured AI">Une IA fiable et mesurée</h3>
+          <p data-en="Every result is tracked (MLflow, traces) and evaluated: faithfulness, latency, R². I'd rather show an honest number than a misleading demo.">Chaque résultat est tracé (MLflow, traces) et évalué : faithfulness, temps de réponse, R². Je préfère un chiffre honnête à une démo trompeuse.</p>
+        </div>
+        <div class="value reveal">
+          <h3 data-en="Business first">Orientée métier</h3>
+          <p data-en="I start from the user's real problem — a credit analyst, a marketing team, an investor — and design the tool that saves them days of work.">Je pars du vrai problème de l'utilisateur — analyste crédit, équipe marketing, investisseur — et je conçois l'outil qui lui fait gagner des jours de travail.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
     <section id="projets" class="container">
       <div class="section-head">
-        <p class="kicker">Projets</p>
-        <h2>Des démos, pas seulement des promesses</h2>
-        <p class="section-sub">Chaque projet résout un vrai problème métier. Lancez la vidéo pour voir l'application tourner.</p>
+        <p class="kicker" data-en="Projects">Projets</p>
+        <h2 data-en="Demos, not just promises">Des démos, pas seulement des promesses</h2>
+        <p class="section-sub" data-en="Each project solves a real business problem. Press play to see the application running.">Chaque projet résout un vrai problème métier. Lancez la vidéo pour voir l'application tourner.</p>
       </div>
 
       <!-- BFI -->
       <article class="case reveal">
         <div class="case-media">
           <div class="tabs" role="tablist">
-            <button class="tab active" data-target="bfi-demo" role="tab">Démo</button>
+            <button class="tab active" data-target="bfi-demo" role="tab" data-en="Demo">Démo</button>
             <button class="tab" data-target="bfi-archi" role="tab">Architecture</button>
           </div>
           <div class="panel active" id="bfi-demo">
@@ -79,35 +143,82 @@
             </video>
           </div>
           <div class="panel" id="bfi-archi">
-            <img src="assets/img/bfi-architecture.jpg" alt="Architecture de BFI Credit : frontend React, backend FastAPI avec pipeline RAG → Tavily → Phi-4, PostgreSQL + pgvector, MLflow" loading="lazy">
+            <img src="assets/img/bfi-architecture.jpg" loading="lazy"
+                 alt="Architecture de BFI Credit : frontend React, backend FastAPI avec pipeline RAG → Tavily → Phi-4, PostgreSQL + pgvector, MLflow"
+                 data-en-alt="BFI Credit architecture: React frontend, FastAPI backend with RAG → Tavily → Phi-4 pipeline, PostgreSQL + pgvector, MLflow">
           </div>
         </div>
         <div class="case-body">
-          <div class="case-meta"><span class="badge">Projet de fin d'études</span><span>VALUE · Déc. 2025 – Juin 2026</span></div>
-          <h3>BFI Credit — Plateforme agentique d'analyse de crédit</h3>
-          <p class="problem">Les analystes crédit passent ~70 % de leur temps à extraire, vérifier et mettre en forme des états financiers hétérogènes.</p>
+          <div class="case-meta"><span class="badge" data-en="Final-year project">Projet de fin d'études</span><span data-en="VALUE · Dec 2025 – Jun 2026">VALUE · Déc. 2025 – Juin 2026</span></div>
+          <h3 data-en="BFI Credit — Agentic credit-analysis platform">BFI Credit — Plateforme agentique d'analyse de crédit</h3>
+          <p class="problem" data-en="Credit analysts spend ~70% of their time extracting, checking and formatting heterogeneous financial statements.">Les analystes crédit passent ~70 % de leur temps à extraire, vérifier et mettre en forme des états financiers hétérogènes.</p>
           <ul class="bullets">
-            <li><strong>Extraction intelligente</strong> : filtrage des pages, structuration en JSON par Phi-4, parallélisme borné face aux limites Azure, cache pour les ré-analyses.</li>
-            <li><strong>Rapport de 16 sections</strong> généré par RAG (pgvector) + recherche web (Tavily), avec boucle de notation qui réécrit automatiquement les sections faibles.</li>
-            <li><strong>Stress testing</strong> (change, inflation, récession) et <em>reverse stress test</em> par bissection pour trouver le point de rupture.</li>
-            <li><strong>Prévisions, recommandations</strong> et chatbot de raffinement, le tout tracé dans MLflow.</li>
+            <li data-en="<strong>Smart extraction</strong>: page filtering, JSON structuring by Phi-4, bounded parallelism to respect Azure rate limits, cache for repeat analyses."><strong>Extraction intelligente</strong> : filtrage des pages, structuration en JSON par Phi-4, parallélisme borné face aux limites Azure, cache pour les ré-analyses.</li>
+            <li data-en="<strong>16-section report</strong> generated with RAG (pgvector) + web research (Tavily), with a scoring loop that automatically rewrites weak sections."><strong>Rapport de 16 sections</strong> généré par RAG (pgvector) + recherche web (Tavily), avec boucle de notation qui réécrit automatiquement les sections faibles.</li>
+            <li data-en="<strong>Stress testing</strong> (FX, inflation, recession) and a <em>reverse stress test</em> using bisection to find the exact breaking point."><strong>Stress testing</strong> (change, inflation, récession) et <em>reverse stress test</em> par bissection pour trouver le point de rupture.</li>
+            <li data-en="<strong>Forecasting, recommendations</strong> and a refinement chatbot, all tracked in MLflow."><strong>Prévisions, recommandations</strong> et chatbot de raffinement, le tout tracé dans MLflow.</li>
           </ul>
           <div class="results">
-            <div><b>~15 min</b><span>rapport complet</span></div>
-            <div><b>1.0</b><span>faithfulness chatbot</span></div>
-            <div><b>7.8 s</b><span>temps de réponse</span></div>
+            <div><b>~15 min</b><span data-en="full report">rapport complet</span></div>
+            <div><b>1.0</b><span data-en="chatbot faithfulness">faithfulness chatbot</span></div>
+            <div><b>7.8 s</b><span data-en="response time">temps de réponse</span></div>
             <div><b>&lt; 0.5 s</b><span>stress test</span></div>
           </div>
           <ul class="tags"><li>Azure OpenAI · Phi-4</li><li>RAG</li><li>FastAPI</li><li>React</li><li>PostgreSQL + pgvector</li><li>MLflow</li><li>Docker</li></ul>
         </div>
       </article>
 
-      <!-- Simulation -->
+      <!-- Crypto due diligence -->
       <article class="case reverse reveal">
         <div class="case-media">
           <div class="tabs" role="tablist">
-            <button class="tab active" data-target="sim-demo" role="tab">Démo</button>
-            <button class="tab" data-target="sim-results" role="tab">Résultats</button>
+            <button class="tab active" data-target="dd-demo" role="tab" data-en="Demo">Démo</button>
+            <button class="tab" data-target="dd-flow" role="tab" data-en="How it works">Fonctionnement</button>
+          </div>
+          <div class="panel active" id="dd-demo">
+            <!-- DEMO VIDEO: replace this placeholder with a <video> once assets/video/crypto-demo.mp4 is added -->
+            <div class="media-placeholder">
+              <span>₿</span>
+              <p data-en="Demo video coming soon">Vidéo de démonstration bientôt disponible</p>
+            </div>
+          </div>
+          <div class="panel" id="dd-flow">
+            <ol class="flow">
+              <li><b>1</b><div><strong data-en="Upload">Import</strong><span data-en="Whitepapers and fund documents (PDF)">Whitepapers et documents du fonds (PDF)</span></div></li>
+              <li><b>2</b><div><strong data-en="Generate">Génération</strong><span data-en="LLaMA 3.2 writes up to 200 questions: Legal, ESG, Risk, Compliance">LLaMA 3.2 rédige jusqu'à 200 questions : Légal, ESG, Risque, Conformité</span></div></li>
+              <li><b>3</b><div><strong data-en="Retrieve">Recherche</strong><span data-en="FAISS finds the relevant passages (MiniLM embeddings)">FAISS retrouve les passages pertinents (embeddings MiniLM)</span></div></li>
+              <li><b>4</b><div><strong data-en="Answer">Réponse</strong><span data-en="BERT extracts the fact, LLaMA writes a clear answer">BERT extrait le fait, LLaMA rédige une réponse claire</span></div></li>
+              <li><b>5</b><div><strong data-en="Decide">Décision</strong><span data-en="Q&amp;A saved in MySQL, decision report exported to PPTX">Q&amp;R stockées dans MySQL, rapport de décision exporté en PPTX</span></div></li>
+            </ol>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-meta"><span class="badge" data-en="Academic project">Projet académique</span><span>ESPRIT · 2024 – 2025</span></div>
+          <h3 data-en="AI due diligence for crypto investments">Due diligence IA pour les investissements crypto</h3>
+          <p class="problem" data-en="Before investing in a crypto asset, a fund must answer hundreds of legal, ESG, risk and compliance questions — by reading dense whitepapers and regulatory texts by hand. It takes weeks.">Avant d'investir dans un actif crypto, un fonds doit répondre à des centaines de questions juridiques, ESG, de risque et de conformité — en lisant à la main des whitepapers et des textes réglementaires denses. Cela prend des semaines.</p>
+          <ul class="bullets">
+            <li data-en="<strong>Automatic question bank</strong>: from the uploaded whitepapers, a local LLaMA 3.2 model (Ollama) generates up to 200 expert-level questions, each tagged Legal, ESG, Risk or Compliance."><strong>Banque de questions automatique</strong> : à partir des whitepapers importés, un modèle LLaMA 3.2 local (Ollama) génère jusqu'à 200 questions de niveau expert, classées Légal, ESG, Risque ou Conformité.</li>
+            <li data-en="<strong>Hybrid RAG answering</strong>: FAISS retrieves the relevant passages, a BERT model fine-tuned on SQuAD extracts the precise fact, and LLaMA turns it into a clear, sourced answer."><strong>Réponses par RAG hybride</strong> : FAISS retrouve les passages pertinents, un BERT fine-tuné sur SQuAD extrait le fait précis, puis LLaMA le reformule en réponse claire et sourcée.</li>
+            <li data-en="<strong>Expert knowledge base</strong> built from 30+ reference documents: FATF and WEF regulatory guides, due-diligence templates and checklists, Bitcoin, Ethereum and Polkadot whitepapers."><strong>Base de connaissances experte</strong> construite à partir de 30+ documents de référence : guides réglementaires FATF et WEF, modèles et checklists de due diligence, whitepapers Bitcoin, Ethereum et Polkadot.</li>
+            <li data-en="<strong>Data pipelines</strong> (Python, Airflow, CoinGecko API) collecting market, on-chain and news data, and automatically downloading project whitepapers."><strong>Pipelines de données</strong> (Python, Airflow, API CoinGecko) collectant données de marché, on-chain et actualités, et téléchargeant automatiquement les whitepapers des projets.</li>
+            <li data-en="<strong>Ready-to-present output</strong>: every Q&amp;A is saved in MySQL and summarised in a PowerPoint decision report, downloadable in one click."><strong>Livrable prêt à présenter</strong> : chaque Q&amp;R est stockée dans MySQL et synthétisée dans un rapport de décision PowerPoint, téléchargeable en un clic.</li>
+          </ul>
+          <div class="results">
+            <div><b>200</b><span data-en="questions / document">questions / document</span></div>
+            <div><b>4</b><span data-en="risk dimensions">axes d'analyse</span></div>
+            <div><b>30+</b><span data-en="reference docs">docs de référence</span></div>
+            <div><b>100 %</b><span data-en="local LLM">LLM local</span></div>
+          </div>
+          <ul class="tags"><li>LLaMA 3.2 · Ollama</li><li>BERT</li><li>FAISS</li><li>Sentence-Transformers</li><li>Airflow</li><li>MySQL</li><li>Streamlit</li><li>python-pptx</li></ul>
+        </div>
+      </article>
+
+      <!-- Simulation -->
+      <article class="case reveal">
+        <div class="case-media">
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-target="sim-demo" role="tab" data-en="Demo">Démo</button>
+            <button class="tab" data-target="sim-results" role="tab" data-en="Results">Résultats</button>
           </div>
           <div class="panel active" id="sim-demo">
             <video controls preload="none" playsinline poster="assets/img/simulation-results.jpg">
@@ -115,154 +226,125 @@
             </video>
           </div>
           <div class="panel" id="sim-results">
-            <img src="assets/img/simulation-results.jpg" alt="Tableau de bord Streamlit : 6000 clients simulés, taux d'adoption 65 %, analyse de clusters 3D" loading="lazy">
+            <img src="assets/img/simulation-results.jpg" loading="lazy"
+                 alt="Tableau de bord Streamlit : 6000 clients simulés, taux d'adoption 65 %, analyse de clusters 3D"
+                 data-en-alt="Streamlit dashboard: 6,000 simulated clients, 65% adoption rate, 3D cluster analysis">
           </div>
         </div>
         <div class="case-body">
-          <div class="case-meta"><span class="badge">Stage</span><span>VALUE · Juin – Août 2025</span></div>
-          <h3>Simulateur de comportement client bancaire</h3>
-          <p class="problem">« Si on lance −10 % sur les prêts pro en digital pendant une dévaluation, combien de clients adoptent, combien partent ? » Tester avant de dépenser.</p>
+          <div class="case-meta"><span class="badge" data-en="Internship">Stage</span><span data-en="VALUE · Jun – Aug 2025">VALUE · Juin – Août 2025</span></div>
+          <h3 data-en="Bank customer behaviour simulator">Simulateur de comportement client bancaire</h3>
+          <p class="problem" data-en="“If we launch −10% on business loans through digital channels during a devaluation, how many clients adopt and how many leave?” Test it before spending the budget.">« Si on lance −10 % sur les prêts pro en digital pendant une dévaluation, combien de clients adoptent, combien partent ? » Tester avant de dépenser.</p>
           <ul class="bullets">
-            <li><strong>Simulation multi-agents</strong> (Mesa + Monte Carlo) : chaque client réagit mois par mois aux campagnes et aux scénarios de marché.</li>
-            <li><strong>Scraping de 20 banques</strong> (Selenium, arabe/français) résumé par LLM et stocké dans Azure Cosmos DB.</li>
-            <li><strong>Agent RAG</strong> LangGraph + FAISS + LLaMA 3, avec un signal de « choc médiatique » injecté dans la simulation.</li>
-            <li><strong>Segmentation</strong> par embeddings + K-Means / Spectral Clustering en archétypes clients.</li>
+            <li data-en="<strong>Multi-agent simulation</strong> (Mesa + Monte Carlo): each client reacts month by month to campaigns and market scenarios."><strong>Simulation multi-agents</strong> (Mesa + Monte Carlo) : chaque client réagit mois par mois aux campagnes et aux scénarios de marché.</li>
+            <li data-en="<strong>Scraping 20 banks</strong> (Selenium, Arabic/French), summarised by an LLM and stored in Azure Cosmos DB."><strong>Scraping de 20 banques</strong> (Selenium, arabe/français) résumé par LLM et stocké dans Azure Cosmos DB.</li>
+            <li data-en="<strong>RAG agent</strong> with LangGraph + FAISS + LLaMA 3, plus a “media shock” signal fed into the simulation."><strong>Agent RAG</strong> LangGraph + FAISS + LLaMA 3, avec un signal de « choc médiatique » injecté dans la simulation.</li>
+            <li data-en="<strong>Segmentation</strong> with embeddings + K-Means / Spectral Clustering into client archetypes."><strong>Segmentation</strong> par embeddings + K-Means / Spectral Clustering en archétypes clients.</li>
           </ul>
           <div class="results">
-            <div><b>92 %</b><span>précision churn</span></div>
-            <div><b>20</b><span>banques scrapées</span></div>
-            <div><b>6 000</b><span>clients simulés</span></div>
+            <div><b>92 %</b><span data-en="churn accuracy">précision churn</span></div>
+            <div><b>20</b><span data-en="banks scraped">banques scrapées</span></div>
+            <div><b>6 000</b><span data-en="simulated clients">clients simulés</span></div>
           </div>
           <ul class="tags"><li>Mesa</li><li>LangGraph</li><li>FAISS</li><li>LLaMA 3</li><li>Selenium</li><li>Cosmos DB</li><li>Streamlit</li></ul>
         </div>
       </article>
 
-      <!-- Smaller projects -->
-      <div class="grid">
-        <article class="card reveal">
-          <div class="card-icon">₿</div>
-          <h3>Due diligence &amp; prévision crypto</h3>
-          <p>Pipelines Airflow agrégeant données on-chain, de marché et d'actualités. Q&amp;A RAG sur les whitepapers qui génère automatiquement une décision de financement en PPTX.</p>
-          <ul class="tags"><li>Airflow</li><li>BERT</li><li>LLaMA 3</li><li>RAG</li><li>Flask</li></ul>
-          <span class="card-note">Projet académique · ESPRIT</span>
-        </article>
-
+      <div class="grid one">
         <article class="card reveal">
           <div class="card-icon">📰</div>
-          <h3>Scraper d'actualités France24</h3>
-          <p>Collecte automatisée d'articles, planifiée et exécutée dans le cloud via GitHub Actions — sans serveur à maintenir.</p>
+          <h3 data-en="France24 news scraper">Scraper d'actualités France24</h3>
+          <p data-en="Automated article collection, scheduled and run in the cloud with GitHub Actions — no server to maintain.">Collecte automatisée d'articles, planifiée et exécutée dans le cloud via GitHub Actions — sans serveur à maintenir.</p>
           <ul class="tags"><li>Python</li><li>Web scraping</li><li>GitHub Actions</li></ul>
-          <a class="card-link" href="https://github.com/nournajjjar/news_scraping" target="_blank" rel="noopener">Voir le code →</a>
+          <a class="card-link" href="https://github.com/nournajjjar/news_scraping" target="_blank" rel="noopener" data-en="View the code →">Voir le code →</a>
         </article>
       </div>
     </section>
 
-    <!-- WHY ME -->
-    <section class="container">
-      <div class="section-head">
-        <p class="kicker">Ce que j'apporte</p>
-        <h2>Pourquoi travailler avec moi</h2>
-      </div>
-      <div class="values">
-        <div class="value reveal">
-          <h3>Du prototype à la production</h3>
-          <p>Je livre des applications complètes : API FastAPI sécurisée (JWT), frontend React, base vectorielle et déploiement Docker Compose en une commande.</p>
-        </div>
-        <div class="value reveal">
-          <h3>Une IA fiable et mesurée</h3>
-          <p>Chaque résultat est tracé (MLflow, traces) et évalué : faithfulness, temps de réponse, R². Je préfère un chiffre honnête à une démo trompeuse.</p>
-        </div>
-        <div class="value reveal">
-          <h3>Orientée métier</h3>
-          <p>Je pars du problème de l'utilisateur — analyste crédit, équipe marketing — et je conçois l'outil qui lui fait gagner des jours de travail.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE & EDUCATION -->
+    <!-- ============ JOURNEY ============ -->
     <section id="parcours" class="container">
       <div class="section-head">
-        <p class="kicker">Parcours</p>
-        <h2>Expérience &amp; formation</h2>
+        <p class="kicker" data-en="Journey">Parcours</p>
+        <h2 data-en="Experience &amp; education">Expérience &amp; formation</h2>
       </div>
       <ol class="timeline">
         <li class="reveal">
-          <span class="date">Déc. 2025 – Juin 2026</span>
-          <h3>Ingénieure IA — Stage de fin d'études · VALUE Digital Services</h3>
-          <p>Conception et développement de BFI Credit, framework agentique d'analyse de crédit pour la banque d'entreprise.</p>
+          <span class="date" data-en="Dec 2025 – Jun 2026">Déc. 2025 – Juin 2026</span>
+          <h3 data-en="AI Engineer — Final-year internship · VALUE Digital Services">Ingénieure IA — Stage de fin d'études · VALUE Digital Services</h3>
+          <p data-en="Designed and built BFI Credit, an agentic credit-analysis framework for corporate banking.">Conception et développement de BFI Credit, framework agentique d'analyse de crédit pour la banque d'entreprise.</p>
         </li>
         <li class="reveal">
-          <span class="date">Juin – Août 2025</span>
-          <h3>Stagiaire Ingénieure IA &amp; Simulation · VALUE</h3>
-          <p>Simulation multi-agents du comportement client, agent RAG, scraping multilingue et dashboards Streamlit.</p>
+          <span class="date" data-en="Jun – Aug 2025">Juin – Août 2025</span>
+          <h3 data-en="AI &amp; Simulation Engineering Intern · VALUE">Stagiaire Ingénieure IA &amp; Simulation · VALUE</h3>
+          <p data-en="Multi-agent customer simulation, RAG agent, multilingual scraping and Streamlit dashboards.">Simulation multi-agents du comportement client, agent RAG, scraping multilingue et dashboards Streamlit.</p>
         </li>
         <li class="reveal">
-          <span class="date">Juil. – Août 2024</span>
-          <h3>Stagiaire · CERT (Centre d'Études et de Recherche des Télécommunications)</h3>
-          <p>Tests de fréquences et d'équipements GSM, LTE, Wi-Fi et Bluetooth ; vérification des normes IEEE 802.15.</p>
+          <span class="date" data-en="Jul – Aug 2024">Juil. – Août 2024</span>
+          <h3 data-en="Intern · CERT (Telecommunications Research Centre)">Stagiaire · CERT (Centre d'Études et de Recherche des Télécommunications)</h3>
+          <p data-en="Frequency and equipment testing for GSM, LTE, Wi-Fi and Bluetooth; IEEE 802.15 compliance checks.">Tests de fréquences et d'équipements GSM, LTE, Wi-Fi et Bluetooth ; vérification des normes IEEE 802.15.</p>
         </li>
         <li class="reveal edu">
           <span class="date">2023 – 2026</span>
-          <h3>Diplôme d'ingénieur en informatique · ESPRIT</h3>
-          <p>Spécialisation Data Science.</p>
+          <h3 data-en="Computer Engineering degree · ESPRIT">Diplôme d'ingénieur en informatique · ESPRIT</h3>
+          <p data-en="Data Science specialisation.">Spécialisation Data Science.</p>
         </li>
         <li class="reveal edu">
           <span class="date">2020 – 2023</span>
-          <h3>Classes préparatoires Maths-Physique · Faculté des Sciences de Monastir</h3>
+          <h3 data-en="Preparatory classes, Maths-Physics · Faculty of Sciences of Monastir">Classes préparatoires Maths-Physique · Faculté des Sciences de Monastir</h3>
         </li>
       </ol>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ============ SKILLS ============ -->
     <section id="competences" class="container">
       <div class="section-head">
-        <p class="kicker">Compétences</p>
-        <h2>Ma boîte à outils</h2>
+        <p class="kicker" data-en="Skills">Compétences</p>
+        <h2 data-en="My toolbox">Ma boîte à outils</h2>
       </div>
       <div class="skills">
         <div class="skill reveal">
-          <h3>IA &amp; LLMs</h3>
+          <h3 data-en="AI &amp; LLMs">IA &amp; LLMs</h3>
           <ul class="tags"><li>RAG</li><li>LangGraph</li><li>LangChain</li><li>Azure OpenAI</li><li>Phi-4</li><li>LLaMA 3</li><li>BERT</li><li>NLP</li><li>FAISS</li><li>pgvector</li></ul>
         </div>
         <div class="skill reveal">
           <h3>Machine Learning</h3>
-          <ul class="tags"><li>Scikit-Learn</li><li>TensorFlow</li><li>Clustering</li><li>Prévision</li><li>Simulation multi-agents</li><li>Monte Carlo</li><li>MLflow</li></ul>
+          <ul class="tags"><li>Scikit-Learn</li><li>TensorFlow</li><li>Clustering</li><li data-en="Forecasting">Prévision</li><li data-en="Multi-agent simulation">Simulation multi-agents</li><li>Monte Carlo</li><li>MLflow</li></ul>
         </div>
         <div class="skill reveal">
           <h3>Data Engineering</h3>
-          <ul class="tags"><li>ETL / ELT</li><li>Apache Airflow</li><li>Spark</li><li>Hadoop</li><li>PostgreSQL</li><li>Cosmos DB</li><li>Selenium</li><li>Docker</li></ul>
+          <ul class="tags"><li>ETL / ELT</li><li>Apache Airflow</li><li>Spark</li><li>Hadoop</li><li>PostgreSQL</li><li>MySQL</li><li>Cosmos DB</li><li>Selenium</li><li>Docker</li></ul>
         </div>
         <div class="skill reveal">
-          <h3>Développement</h3>
+          <h3 data-en="Development">Développement</h3>
           <ul class="tags"><li>Python</li><li>FastAPI</li><li>Flask</li><li>React</li><li>SQL</li><li>Java / Spring Boot</li><li>C# / .NET</li></ul>
         </div>
       </div>
 
       <div class="extras">
         <div class="reveal">
-          <h3>Certifications</h3>
+          <h3 data-en="Certifications">Certifications</h3>
           <ul class="certs">
             <li><span>Building Transformer-Based NLP Applications</span><em>NVIDIA · 2025</em></li>
-            <li><span>Applications de l'IA pour la détection d'anomalies</span><em>NVIDIA · 2025</em></li>
+            <li><span data-en="Applications of AI for Anomaly Detection">Applications de l'IA pour la détection d'anomalies</span><em>NVIDIA · 2025</em></li>
             <li><span>Hashgraph Developer Certification</span><em>Hedera · 2025</em></li>
           </ul>
         </div>
         <div class="reveal">
-          <h3>Langues</h3>
+          <h3 data-en="Languages">Langues</h3>
           <ul class="certs">
-            <li><span>Arabe</span><em>Langue maternelle</em></li>
-            <li><span>Français</span><em>B2</em></li>
-            <li><span>Anglais</span><em>B2</em></li>
+            <li><span data-en="Arabic">Arabe</span><em data-en="Native">Langue maternelle</em></li>
+            <li><span data-en="French">Français</span><em>B2</em></li>
+            <li><span data-en="English">Anglais</span><em>B2</em></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ============ CONTACT ============ -->
     <section id="contact" class="container">
       <div class="contact reveal">
-        <h2>Vous cherchez une ingénieure Data &amp; IA ?</h2>
-        <p>Je réponds rapidement. Parlons de votre projet ou de votre équipe.</p>
+        <h2 data-en="Looking for a Data &amp; AI engineer?">Vous cherchez une ingénieure Data &amp; IA ?</h2>
+        <p data-en="I reply quickly. Let's talk about your project or your team.">Je réponds rapidement. Parlons de votre projet ou de votre équipe.</p>
         <div class="actions center">
           <a class="btn primary" href="mailto:nourelhouda.najjar@esprit.tn">nourelhouda.najjar@esprit.tn</a>
           <a class="btn" href="https://www.linkedin.com/in/nour-el-houda-najjar" target="_blank" rel="noopener">LinkedIn</a>
@@ -272,12 +354,38 @@
   </main>
 
   <footer class="container footer">
-    <p>© 2026 Nour elhouda Najjar · Tunis, Tunisie</p>
-    <a href="#top">Haut de page ↑</a>
+    <p>© 2026 Nour elhouda Najjar · <span data-en="Tunis, Tunisia">Tunis, Tunisie</span></p>
+    <a href="#top" data-en="Back to top ↑">Haut de page ↑</a>
   </footer>
 
   <script>
-    // Tabs: switch between demo video and diagram/screenshot
+    // ---- Language toggle (FR default, EN from data-en attributes) ----
+    (function () {
+      var texts = document.querySelectorAll('[data-en]');
+      var alts = document.querySelectorAll('[data-en-alt]');
+      texts.forEach(function (el) { el.dataset.fr = el.innerHTML; });
+      alts.forEach(function (el) { el.dataset.frAlt = el.getAttribute('alt'); });
+      var titles = { fr: document.title, en: 'Nour elhouda Najjar — Data & AI Engineer' };
+      var btn = document.getElementById('lang-toggle');
+
+      function setLang(lang) {
+        texts.forEach(function (el) { el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.fr; });
+        alts.forEach(function (el) { el.setAttribute('alt', lang === 'en' ? el.dataset.enAlt : el.dataset.frAlt); });
+        document.documentElement.lang = lang;
+        document.title = titles[lang];
+        btn.dataset.active = lang;
+        btn.setAttribute('aria-label', lang === 'en' ? 'Passer en français' : 'Switch to English');
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+      }
+
+      var saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      if (!saved) saved = (navigator.language || 'fr').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+      setLang(saved);
+      btn.addEventListener('click', function () { setLang(btn.dataset.active === 'en' ? 'fr' : 'en'); });
+    })();
+
+    // ---- Tabs: switch between demo video and diagram/screenshot ----
     document.querySelectorAll('.case-media').forEach(function (media) {
       media.querySelectorAll('.tab').forEach(function (tab) {
         tab.addEventListener('click', function () {
@@ -293,7 +401,7 @@
       });
     });
 
-    // Fade sections in as they scroll into view
+    // ---- Fade sections in as they scroll into view ----
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.documentElement.classList.add('js-reveal');
       var io = new IntersectionObserver(function (entries) {
