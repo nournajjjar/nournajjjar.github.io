@@ -544,6 +544,16 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .footer p { margin: 0; }
 .footer a { color: var(--muted); }
 
+
+/* Volunteering */
+.sub-title { font-size: 1.25rem; margin: 56px 0 18px; }
+.engage { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.engage > div { padding: 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.engage b { display: block; font-family: "Space Grotesk", sans-serif; font-size: 1.05rem; }
+.engage span { color: var(--accent-2); font-size: 0.82rem; font-weight: 600; }
+.engage p { margin: 8px 0 0; color: var(--muted); font-size: 0.9rem; }
+.case-body .card-link { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 0.9rem; }
+
 /* ---------- Reveal on scroll ---------- */
 .js-reveal .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .js-reveal .reveal.visible { opacity: 1; transform: none; }
@@ -558,6 +568,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .hero { grid-template-columns: 1fr; min-height: 0; gap: 40px; }
   .hero-photo { order: -1; width: min(260px, 70vw); }
   .about { grid-template-columns: 1fr; }
+  .engage { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
