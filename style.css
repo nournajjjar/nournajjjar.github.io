@@ -604,6 +604,29 @@ h1, h2, h3 { overflow-wrap: break-word; }
 }
 .cv-viewer:hover img { transform: translateY(-4%); }
 
+
+/* Certifications */
+.certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cert {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: transform .2s, border-color .2s;
+}
+.cert:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.cert-thumb { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #fff; border-bottom: 1px solid var(--border); }
+.cert-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .4s; }
+.cert:hover .cert-thumb img { transform: scale(1.04); }
+.cert-body { display: flex; flex-direction: column; flex: 1; padding: 18px 20px 20px; }
+.cert-issuer { color: var(--accent-2); font-size: 0.8rem; font-weight: 600; }
+.cert h3 { font-size: 1.05rem; line-height: 1.3; margin: 6px 0 4px; }
+.cert-date { color: var(--muted); font-size: 0.85rem; }
+.cert-links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: auto; padding-top: 14px; font-size: 0.88rem; font-weight: 600; }
+.extras.one { grid-template-columns: 1fr; }
+
 /* ---------- Reveal on scroll ---------- */
 .js-reveal .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .js-reveal .reveal.visible { opacity: 1; transform: none; }
@@ -619,6 +642,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .hero-photo { order: -1; width: min(260px, 70vw); }
   .about { grid-template-columns: 1fr; }
   .engage { grid-template-columns: 1fr; }
+  .certs-grid { grid-template-columns: repeat(2, 1fr); }
   .cv-card { grid-template-columns: 1fr; padding: 20px; gap: 24px; }
   .cv-viewer { height: 420px; }
 }
@@ -632,7 +656,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .chip-1 { left: -6%; }
   .chip-2 { right: -6%; }
   .float-chip { font-size: 0.75rem; padding: 6px 10px; }
-  .grid, .skills, .extras { grid-template-columns: 1fr; }
+  .grid, .skills, .extras, .certs-grid { grid-template-columns: 1fr; }
   .stats dt { font-size: 1.6rem; }
   .stats div { padding: 18px 16px; }
   .case h3 { font-size: 1.3rem; }
