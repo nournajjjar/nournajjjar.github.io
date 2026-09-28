@@ -452,16 +452,18 @@
           <h2 data-en="My résumé">Mon CV</h2>
           <p data-en="Everything on one page: experience, projects, skills and certifications. View it here, open it full screen, or download the PDF.">Tout en un coup d'œil : expérience, projets, compétences et certifications. Consultez-le ici, ouvrez-le en plein écran ou téléchargez le PDF.</p>
           <div class="actions">
-            <a class="btn primary" href="assets/cv/CV_Nourelhouda_Najjar.pdf" download data-en="Download PDF ↓">Télécharger le PDF ↓</a>
-            <a class="btn" href="assets/cv/CV_Nourelhouda_Najjar.pdf" target="_blank" rel="noopener" data-en="Open full screen ↗">Ouvrir en plein écran ↗</a>
+            <a class="btn primary" href="assets/cv/CV_Nourelhouda_Najjar_FR.pdf" data-href-en="assets/cv/CV_Nourelhouda_Najjar_EN.pdf" download data-en="Download PDF ↓">Télécharger le PDF ↓</a>
+            <a class="btn" href="assets/cv/CV_Nourelhouda_Najjar_FR.pdf" data-href-en="assets/cv/CV_Nourelhouda_Najjar_EN.pdf" target="_blank" rel="noopener" data-en="Open full screen ↗">Ouvrir en plein écran ↗</a>
+            <a class="cv-other" href="assets/cv/CV_Nourelhouda_Najjar_EN.pdf" data-href-en="assets/cv/CV_Nourelhouda_Najjar_FR.pdf" target="_blank" rel="noopener" data-en="Voir la version française ↗">View English version ↗</a>
           </div>
           <ul class="cv-meta">
-            <li data-en="3 pages · English">3 pages · Anglais</li>
+            <li data-en="3 pages · English">3 pages · Français</li>
+            <li data-en="Also available in French">Aussi disponible en anglais</li>
             <li data-en="Updated September 2026">Mis à jour en septembre 2026</li>
           </ul>
         </div>
-        <a class="cv-viewer" href="assets/cv/CV_Nourelhouda_Najjar.pdf" target="_blank" rel="noopener">
-          <img src="assets/img/cv-preview.jpg" loading="lazy" alt="Aperçu de la première page du CV" data-en-alt="Preview of the first page of the CV">
+        <a class="cv-viewer" href="assets/cv/CV_Nourelhouda_Najjar_FR.pdf" data-href-en="assets/cv/CV_Nourelhouda_Najjar_EN.pdf" target="_blank" rel="noopener">
+          <img src="assets/img/cv-preview-fr.jpg" data-src-en="assets/img/cv-preview-en.jpg" loading="lazy" alt="Aperçu de la première page du CV" data-en-alt="Preview of the first page of the CV">
           <span class="cv-open" data-en="Open the full CV ↗">Voir le CV complet ↗</span>
         </a>
       </div>
@@ -493,12 +495,18 @@
       var alts = document.querySelectorAll('[data-en-alt]');
       texts.forEach(function (el) { el.dataset.fr = el.innerHTML; });
       alts.forEach(function (el) { el.dataset.frAlt = el.getAttribute('alt'); });
+      var hrefs = document.querySelectorAll('[data-href-en]');
+      var srcs = document.querySelectorAll('[data-src-en]');
+      hrefs.forEach(function (el) { el.dataset.hrefFr = el.getAttribute('href'); });
+      srcs.forEach(function (el) { el.dataset.srcFr = el.getAttribute('src'); });
       var titles = { fr: document.title, en: 'Nour elhouda Najjar — Data Engineer & AI Engineer' };
       var btn = document.getElementById('lang-toggle');
 
       function setLang(lang) {
         texts.forEach(function (el) { el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.fr; });
         alts.forEach(function (el) { el.setAttribute('alt', lang === 'en' ? el.dataset.enAlt : el.dataset.frAlt); });
+        hrefs.forEach(function (el) { el.setAttribute('href', lang === 'en' ? el.dataset.hrefEn : el.dataset.hrefFr); });
+        srcs.forEach(function (el) { el.setAttribute('src', lang === 'en' ? el.dataset.srcEn : el.dataset.srcFr); });
         document.documentElement.lang = lang;
         document.title = titles[lang];
         btn.dataset.active = lang;

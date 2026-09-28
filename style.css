@@ -569,6 +569,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 }
 .cv-info > p:not(.kicker) { color: var(--muted); font-size: 1.05rem; margin: 14px 0 0; }
 .cv-info .actions { margin-top: 24px; }
+.cv-other { display: inline-block; margin-top: 14px; font-size: 0.9rem; font-weight: 600; }
 .cv-meta { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 20px 0 0; }
 .cv-meta li { padding: 4px 11px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2); color: var(--muted); font-size: 0.8rem; }
 .cv-viewer {
