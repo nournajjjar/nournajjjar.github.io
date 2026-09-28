@@ -3,137 +3,306 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nour elhouda Najjar — Data & IA</title>
-  <meta name="description" content="Portfolio de Nour elhouda Najjar, ingénieure en informatique spécialisée en Data Science, Data Engineering et IA.">
+  <title>Nour elhouda Najjar — Ingénieure Data & IA</title>
+  <meta name="description" content="Ingénieure Data & IA : je transforme des documents et des données brutes en systèmes IA fiables — RAG, LLMs, pipelines de données et simulation.">
+  <meta property="og:title" content="Nour elhouda Najjar — Ingénieure Data & IA">
+  <meta property="og:description" content="RAG, LLMs, pipelines de données et simulation, avec des résultats mesurés.">
+  <meta property="og:image" content="https://nournajjjar.github.io/assets/img/bfi-poster.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%236d5dfc'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>NN</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#" class="logo">NN</a>
+      <a href="#top" class="logo"><span>NN</span></a>
       <nav>
-        <a href="#experience">Expérience</a>
         <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
         <a href="#competences">Compétences</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
+    <!-- HERO -->
     <section class="hero container">
-      <p class="eyebrow">Data Engineering · Machine Learning · IA</p>
-      <h1>Nour elhouda Najjar</h1>
+      <p class="status"><span class="dot"></span>Ouverte aux opportunités · Data &amp; IA</p>
+      <h1>Je construis des systèmes d'IA<br><span class="grad">sur lesquels on peut compter.</span></h1>
       <p class="lead">
-        Ingénieure en informatique (ESPRIT, spécialisation Data Science). Je conçois des pipelines de données,
-        des systèmes RAG et des simulations multi-agents, du prototype jusqu'au tableau de bord.
+        Je suis <strong>Nour elhouda Najjar</strong>, ingénieure en informatique (ESPRIT, Data Science).
+        Je transforme des documents financiers et des données brutes en outils IA utilisables en production :
+        RAG, LLMs, pipelines de données et simulation, avec des résultats <em>mesurés</em>, pas estimés.
       </p>
       <div class="actions">
-        <a class="btn primary" href="mailto:nourelhouda.najjar@esprit.tn">Me contacter</a>
-        <a class="btn" href="https://github.com/nournajjjar" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/nour-el-houda-najjar" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn primary" href="#projets">Voir les démos</a>
+        <a class="btn" href="mailto:nourelhouda.najjar@esprit.tn">Me contacter</a>
+        <a class="icon-btn" href="https://github.com/nournajjjar" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/nour-el-houda-najjar" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg>
+        </a>
       </div>
+
+      <dl class="stats">
+        <div><dt>~15 min</dt><dd>pour un rapport de crédit complet de 16 sections, au lieu de plusieurs jours</dd></div>
+        <div><dt>0</dt><dd>hallucination détectée sur le chatbot bancaire (faithfulness 1.0)</dd></div>
+        <div><dt>92 %</dt><dd>de précision sur la prédiction du churn client</dd></div>
+        <div><dt>20</dt><dd>banques tunisiennes couvertes par le pipeline de scraping</dd></div>
+      </dl>
     </section>
 
-    <section id="experience" class="container">
-      <h2>Expérience</h2>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>Stagiaire Ingénieure IA et Simulation — VALUE</h3>
-          <span class="date">Juin 2025 – Août 2025</span>
-        </div>
-        <ul>
-          <li>Simulation multi-agents (+200 clients virtuels) avec Mesa et Monte Carlo pour modéliser le churn, l'adoption produit et des scénarios économiques.</li>
-          <li>Extraction automatique de données financières multilingues (arabe/français) avec Selenium, stockage dans Azure Cosmos DB.</li>
-          <li>Système RAG basé sur FAISS et LLaMA pour la génération de profils et la simulation comportementale.</li>
-          <li>Tableaux de bord Streamlit pour le suivi de la satisfaction, des risques et de l'adoption régionale.</li>
-          <li><strong>92 %</strong> de précision dans la prédiction du churn.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>Stagiaire — CERT (Centre d'Études et de Recherche des Télécommunications)</h3>
-          <span class="date">Juil. 2024 – Août 2024</span>
-        </div>
-        <ul>
-          <li>Tests de fréquences et d'équipements GSM, LTE, Wi-Fi et Bluetooth.</li>
-          <li>Analyse et vérification technique des normes IEEE 802.15 et des réseaux de communication.</li>
-        </ul>
-      </article>
-    </section>
-
+    <!-- PROJECTS -->
     <section id="projets" class="container">
-      <h2>Projets</h2>
+      <div class="section-head">
+        <p class="kicker">Projets</p>
+        <h2>Des démos, pas seulement des promesses</h2>
+        <p class="section-sub">Chaque projet résout un vrai problème métier. Lancez la vidéo pour voir l'application tourner.</p>
+      </div>
+
+      <!-- BFI -->
+      <article class="case reveal">
+        <div class="case-media">
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-target="bfi-demo" role="tab">Démo</button>
+            <button class="tab" data-target="bfi-archi" role="tab">Architecture</button>
+          </div>
+          <div class="panel active" id="bfi-demo">
+            <video controls preload="none" playsinline poster="assets/img/bfi-poster.jpg">
+              <source src="assets/video/bfi-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="panel" id="bfi-archi">
+            <img src="assets/img/bfi-architecture.jpg" alt="Architecture de BFI Credit : frontend React, backend FastAPI avec pipeline RAG → Tavily → Phi-4, PostgreSQL + pgvector, MLflow" loading="lazy">
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-meta"><span class="badge">Projet de fin d'études</span><span>VALUE · Déc. 2025 – Juin 2026</span></div>
+          <h3>BFI Credit — Plateforme agentique d'analyse de crédit</h3>
+          <p class="problem">Les analystes crédit passent ~70 % de leur temps à extraire, vérifier et mettre en forme des états financiers hétérogènes.</p>
+          <ul class="bullets">
+            <li><strong>Extraction intelligente</strong> : filtrage des pages, structuration en JSON par Phi-4, parallélisme borné face aux limites Azure, cache pour les ré-analyses.</li>
+            <li><strong>Rapport de 16 sections</strong> généré par RAG (pgvector) + recherche web (Tavily), avec boucle de notation qui réécrit automatiquement les sections faibles.</li>
+            <li><strong>Stress testing</strong> (change, inflation, récession) et <em>reverse stress test</em> par bissection pour trouver le point de rupture.</li>
+            <li><strong>Prévisions, recommandations</strong> et chatbot de raffinement, le tout tracé dans MLflow.</li>
+          </ul>
+          <div class="results">
+            <div><b>~15 min</b><span>rapport complet</span></div>
+            <div><b>1.0</b><span>faithfulness chatbot</span></div>
+            <div><b>7.8 s</b><span>temps de réponse</span></div>
+            <div><b>&lt; 0.5 s</b><span>stress test</span></div>
+          </div>
+          <ul class="tags"><li>Azure OpenAI · Phi-4</li><li>RAG</li><li>FastAPI</li><li>React</li><li>PostgreSQL + pgvector</li><li>MLflow</li><li>Docker</li></ul>
+        </div>
+      </article>
+
+      <!-- Simulation -->
+      <article class="case reverse reveal">
+        <div class="case-media">
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-target="sim-demo" role="tab">Démo</button>
+            <button class="tab" data-target="sim-results" role="tab">Résultats</button>
+          </div>
+          <div class="panel active" id="sim-demo">
+            <video controls preload="none" playsinline poster="assets/img/simulation-results.jpg">
+              <source src="assets/video/simulation-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="panel" id="sim-results">
+            <img src="assets/img/simulation-results.jpg" alt="Tableau de bord Streamlit : 6000 clients simulés, taux d'adoption 65 %, analyse de clusters 3D" loading="lazy">
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-meta"><span class="badge">Stage</span><span>VALUE · Juin – Août 2025</span></div>
+          <h3>Simulateur de comportement client bancaire</h3>
+          <p class="problem">« Si on lance −10 % sur les prêts pro en digital pendant une dévaluation, combien de clients adoptent, combien partent ? » Tester avant de dépenser.</p>
+          <ul class="bullets">
+            <li><strong>Simulation multi-agents</strong> (Mesa + Monte Carlo) : chaque client réagit mois par mois aux campagnes et aux scénarios de marché.</li>
+            <li><strong>Scraping de 20 banques</strong> (Selenium, arabe/français) résumé par LLM et stocké dans Azure Cosmos DB.</li>
+            <li><strong>Agent RAG</strong> LangGraph + FAISS + LLaMA 3, avec un signal de « choc médiatique » injecté dans la simulation.</li>
+            <li><strong>Segmentation</strong> par embeddings + K-Means / Spectral Clustering en archétypes clients.</li>
+          </ul>
+          <div class="results">
+            <div><b>92 %</b><span>précision churn</span></div>
+            <div><b>20</b><span>banques scrapées</span></div>
+            <div><b>6 000</b><span>clients simulés</span></div>
+          </div>
+          <ul class="tags"><li>Mesa</li><li>LangGraph</li><li>FAISS</li><li>LLaMA 3</li><li>Selenium</li><li>Cosmos DB</li><li>Streamlit</li></ul>
+        </div>
+      </article>
+
+      <!-- Smaller projects -->
       <div class="grid">
-        <article class="card">
-          <h3>Plateforme IA de Due Diligence et Prévision Crypto</h3>
-          <p>Collecte, traitement et visualisation de données crypto : pipelines Airflow agrégeant données on-chain, de marché et d'actualités ; modèles BERT, LLaMA 3 et GPT-2 ; Q&amp;A RAG sur les whitepapers générant des décisions de financement en PPTX.</p>
-          <ul class="tags"><li>Python</li><li>Airflow</li><li>MySQL</li><li>RAG</li><li>Flask</li></ul>
+        <article class="card reveal">
+          <div class="card-icon">₿</div>
+          <h3>Due diligence &amp; prévision crypto</h3>
+          <p>Pipelines Airflow agrégeant données on-chain, de marché et d'actualités. Q&amp;A RAG sur les whitepapers qui génère automatiquement une décision de financement en PPTX.</p>
+          <ul class="tags"><li>Airflow</li><li>BERT</li><li>LLaMA 3</li><li>RAG</li><li>Flask</li></ul>
+          <span class="card-note">Projet académique · ESPRIT</span>
         </article>
 
-        <article class="card">
-          <h3>Simulation multi-agents du churn</h3>
-          <p>Modélisation de +200 clients virtuels pour tester des scénarios d'adoption et de churn, enrichie par un RAG (FAISS + LLaMA) et restituée dans des dashboards Streamlit.</p>
-          <ul class="tags"><li>Mesa</li><li>Monte Carlo</li><li>FAISS</li><li>Streamlit</li></ul>
-        </article>
-
-        <article class="card">
+        <article class="card reveal">
+          <div class="card-icon">📰</div>
           <h3>Scraper d'actualités France24</h3>
-          <p>Collecte automatisée d'articles France24, exécutée périodiquement via GitHub Actions.</p>
+          <p>Collecte automatisée d'articles, planifiée et exécutée dans le cloud via GitHub Actions — sans serveur à maintenir.</p>
           <ul class="tags"><li>Python</li><li>Web scraping</li><li>GitHub Actions</li></ul>
           <a class="card-link" href="https://github.com/nournajjjar/news_scraping" target="_blank" rel="noopener">Voir le code →</a>
         </article>
       </div>
     </section>
 
+    <!-- WHY ME -->
+    <section class="container">
+      <div class="section-head">
+        <p class="kicker">Ce que j'apporte</p>
+        <h2>Pourquoi travailler avec moi</h2>
+      </div>
+      <div class="values">
+        <div class="value reveal">
+          <h3>Du prototype à la production</h3>
+          <p>Je livre des applications complètes : API FastAPI sécurisée (JWT), frontend React, base vectorielle et déploiement Docker Compose en une commande.</p>
+        </div>
+        <div class="value reveal">
+          <h3>Une IA fiable et mesurée</h3>
+          <p>Chaque résultat est tracé (MLflow, traces) et évalué : faithfulness, temps de réponse, R². Je préfère un chiffre honnête à une démo trompeuse.</p>
+        </div>
+        <div class="value reveal">
+          <h3>Orientée métier</h3>
+          <p>Je pars du problème de l'utilisateur — analyste crédit, équipe marketing — et je conçois l'outil qui lui fait gagner des jours de travail.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="parcours" class="container">
+      <div class="section-head">
+        <p class="kicker">Parcours</p>
+        <h2>Expérience &amp; formation</h2>
+      </div>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="date">Déc. 2025 – Juin 2026</span>
+          <h3>Ingénieure IA — Stage de fin d'études · VALUE Digital Services</h3>
+          <p>Conception et développement de BFI Credit, framework agentique d'analyse de crédit pour la banque d'entreprise.</p>
+        </li>
+        <li class="reveal">
+          <span class="date">Juin – Août 2025</span>
+          <h3>Stagiaire Ingénieure IA &amp; Simulation · VALUE</h3>
+          <p>Simulation multi-agents du comportement client, agent RAG, scraping multilingue et dashboards Streamlit.</p>
+        </li>
+        <li class="reveal">
+          <span class="date">Juil. – Août 2024</span>
+          <h3>Stagiaire · CERT (Centre d'Études et de Recherche des Télécommunications)</h3>
+          <p>Tests de fréquences et d'équipements GSM, LTE, Wi-Fi et Bluetooth ; vérification des normes IEEE 802.15.</p>
+        </li>
+        <li class="reveal edu">
+          <span class="date">2023 – 2026</span>
+          <h3>Diplôme d'ingénieur en informatique · ESPRIT</h3>
+          <p>Spécialisation Data Science.</p>
+        </li>
+        <li class="reveal edu">
+          <span class="date">2020 – 2023</span>
+          <h3>Classes préparatoires Maths-Physique · Faculté des Sciences de Monastir</h3>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
     <section id="competences" class="container">
-      <h2>Compétences</h2>
+      <div class="section-head">
+        <p class="kicker">Compétences</p>
+        <h2>Ma boîte à outils</h2>
+      </div>
       <div class="skills">
-        <div><h3>Langages &amp; Frameworks</h3><p>Python (NumPy, Pandas, Scikit-Learn, TensorFlow), Java, C, C#, SQL, NoSQL, .NET, Spring Boot</p></div>
-        <div><h3>Data Science &amp; IA</h3><p>Machine Learning, Deep Learning, NLP, LLMs, RAG</p></div>
-        <div><h3>Data Engineering &amp; Big Data</h3><p>ETL/ELT, Apache Airflow, Hadoop, Apache Spark, Docker</p></div>
-        <div><h3>Visualisation &amp; BI</h3><p>Power BI, Streamlit</p></div>
-        <div><h3>Méthodologies</h3><p>CRISP-DM, Design Thinking</p></div>
-        <div><h3>Langues</h3><p>Arabe (maternelle), Français (B2), Anglais (B2)</p></div>
+        <div class="skill reveal">
+          <h3>IA &amp; LLMs</h3>
+          <ul class="tags"><li>RAG</li><li>LangGraph</li><li>LangChain</li><li>Azure OpenAI</li><li>Phi-4</li><li>LLaMA 3</li><li>BERT</li><li>NLP</li><li>FAISS</li><li>pgvector</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Machine Learning</h3>
+          <ul class="tags"><li>Scikit-Learn</li><li>TensorFlow</li><li>Clustering</li><li>Prévision</li><li>Simulation multi-agents</li><li>Monte Carlo</li><li>MLflow</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Data Engineering</h3>
+          <ul class="tags"><li>ETL / ELT</li><li>Apache Airflow</li><li>Spark</li><li>Hadoop</li><li>PostgreSQL</li><li>Cosmos DB</li><li>Selenium</li><li>Docker</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Développement</h3>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>Flask</li><li>React</li><li>SQL</li><li>Java / Spring Boot</li><li>C# / .NET</li></ul>
+        </div>
+      </div>
+
+      <div class="extras">
+        <div class="reveal">
+          <h3>Certifications</h3>
+          <ul class="certs">
+            <li><span>Building Transformer-Based NLP Applications</span><em>NVIDIA · 2025</em></li>
+            <li><span>Applications de l'IA pour la détection d'anomalies</span><em>NVIDIA · 2025</em></li>
+            <li><span>Hashgraph Developer Certification</span><em>Hedera · 2025</em></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3>Langues</h3>
+          <ul class="certs">
+            <li><span>Arabe</span><em>Langue maternelle</em></li>
+            <li><span>Français</span><em>B2</em></li>
+            <li><span>Anglais</span><em>B2</em></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="container two-col">
-      <div>
-        <h2>Formation</h2>
-        <div class="item">
-          <div class="item-head"><h3>ESPRIT — Cycle Ingénieur en Informatique</h3><span class="date">2023 – 2026</span></div>
-          <p class="muted">Spécialisation Data Science</p>
-        </div>
-        <div class="item">
-          <div class="item-head"><h3>Faculté des Sciences de Monastir</h3><span class="date">2020 – 2023</span></div>
-          <p class="muted">Parcours préparatoire Mathématiques-Physique</p>
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <div class="contact reveal">
+        <h2>Vous cherchez une ingénieure Data &amp; IA ?</h2>
+        <p>Je réponds rapidement. Parlons de votre projet ou de votre équipe.</p>
+        <div class="actions center">
+          <a class="btn primary" href="mailto:nourelhouda.najjar@esprit.tn">nourelhouda.najjar@esprit.tn</a>
+          <a class="btn" href="https://www.linkedin.com/in/nour-el-houda-najjar" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
-      <div>
-        <h2>Certificats</h2>
-        <ul class="certs">
-          <li><span>Applications de l'IA pour la Détection d'Anomalies</span><span class="muted">NVIDIA · 05/2025</span></li>
-          <li><span>Building Transformer-Based NLP Applications</span><span class="muted">NVIDIA · 10/2025</span></li>
-          <li><span>Hashgraph Developer Certification</span><span class="muted">Hedera · 11/2025</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>Une opportunité en Data, ML ou IA ? Écrivez-moi.</p>
-      <a class="btn primary" href="mailto:nourelhouda.najjar@esprit.tn">nourelhouda.najjar@esprit.tn</a>
     </section>
   </main>
 
   <footer class="container footer">
     <p>© 2026 Nour elhouda Najjar · Tunis, Tunisie</p>
+    <a href="#top">Haut de page ↑</a>
   </footer>
+
+  <script>
+    // Tabs: switch between demo video and diagram/screenshot
+    document.querySelectorAll('.case-media').forEach(function (media) {
+      media.querySelectorAll('.tab').forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          media.querySelectorAll('.tab').forEach(function (t) { t.classList.remove('active'); });
+          media.querySelectorAll('.panel').forEach(function (p) {
+            p.classList.remove('active');
+            var v = p.querySelector('video');
+            if (v) v.pause();
+          });
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.target).classList.add('active');
+        });
+      });
+    });
+
+    // Fade sections in as they scroll into view
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-reveal');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    }
+  </script>
 </body>
 </html>
